@@ -9,12 +9,6 @@ Este proyecto utiliza las siguientes tecnologías:
 ## Descripción ##
 Aplicación Frontend para listar datos de estudiantes, tutores y reservas obtenidos mediante el consumo de una API.
 
-## Vista Previa
-
-### Página de Inicio
-![Página de Inicio](https://drive.google.com/file/d/1futa9wRYY9EI3MVgnGYSNS5JtTgzTwPv/view?usp=sharing)
-
-
 ## Instrucciones para Ejecutar la Aplicación
 Sigue estos pasos para ejecutar la aplicación en tu entorno local:
 
