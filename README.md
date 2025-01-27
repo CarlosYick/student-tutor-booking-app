@@ -25,7 +25,7 @@ Asegúrate de tener instalados los siguientes programas en tu computador si toda
   npm install -g @angular/cli
 
 ### Paso 1: Clonar el Repositorio
-En la ubicación donde quieras clonar el repositorio abre una terminal y ejecuta el comando **https://github.com/CarlosYick/student-tutor-booking-app.git**
+En la ubicación donde quieras clonar el repositorio abre una terminal y ejecuta el comando **git clone https://github.com/CarlosYick/student-tutor-booking-app.git**
 
 ### Paso 2: Instalar las Dependencias
 En la misma ubación donde clonaste el proyecto ejecuta el comando **npm install** en una terminal.
