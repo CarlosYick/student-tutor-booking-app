@@ -17,7 +17,7 @@ Aplicación Frontend para listar datos de estudiantes, tutores y reservas obteni
 ### Página de Bookings
 [![vista-previa-3.png](https://i.postimg.cc/sXtC069K/vista-previa-3.png)](https://postimg.cc/mzNnPSnF)
 
-### Página de Bookings
+### Datos Tutor
 [![vista-previa-4.png](https://i.postimg.cc/2Swm8xr8/vista-previa-4.png)](https://postimg.cc/dhLg5rhz)
 
 
