@@ -1,53 +1,35 @@
-# WorldsAcross Frontend Test
+## Tecnologías Usadas
+![Angular](https://angular.io/assets/images/logos/angular/angular.svg)
+![Ionic](https://ionicframework.com/img/meta/logo.png)
 
-## Descripción
-Esta es una prueba técnica para evaluar tus habilidades en Angular e Ionic. El objetivo es crear una aplicación frontend que consuma una API proporcionada.
+Este proyecto utiliza las siguientes tecnologías:
+- **Angular**: Un framework para construir aplicaciones web dinámicas y robustas.
+- **Ionic**: Un framework para desarrollar aplicaciones móviles híbridas utilizando tecnologías web.
 
-## Objetivos
-- Construir una aplicación en Angular e Ionic.
-- Consumir datos desde la API mockeada proporcionada.
-- Implementar filtros dinámicos y diseño responsivo.
+## Descripción ##
+Aplicación Frontend para listar datos de estudiantes, tutores y reservas obtenidos mediante el consumo de una API.
 
-## Endpoints de la API
-Base URL: `https://api.mockapi.com/api`
+## Instrucciones para Ejecutar la Aplicación
+Sigue estos pasos para ejecutar la aplicación en tu entorno local:
 
-### Headers
-Todos los endpoints requieren el siguiente header:
-- `x-api-key: fa8bd36ecb1d4e43bc0952504a138576`
+### Requisitos Previos
 
-### Endpoints Disponibles
-- `GET /tutors`: Lista de tutores.
-- `GET /users`: Lista de usuarios.
-- `GET /booking`: Lista de reservas.
+Asegúrate de tener instalados los siguientes programas en tu computador si todavía no los tienes:
 
-## Funcionalidades a Implementar
+- **Node.js**: [Descargar Node.js](https://nodejs.org/)
+- - **Ionic CLI**: Puedes instalar Ionic CLI globalmente usando el siguiente comando:
+  ```bash
+  npm install -g @ionic/cli
+- **Angular CLI**: Puedes instalar Angular CLI globalmente usando el siguiente comando:
+  ```bash
+  npm install -g @angular/cli
 
-### Lista de Tutores
-- Mostrar una lista de tutores obtenida del endpoint `/tutors`.
-- Implementar un filtro dinámico por `Speciality`.
+### Paso 1: Clonar el Repositorio
+En la ubicación donde quieras clonar el repositorio abre una terminal y ejecuta el comando **https://github.com/CarlosYick/student-tutor-booking-app.git**
 
-### Lista de Usuarios
-- Mostrar una lista de usuarios obtenida del endpoint `/users`.
-- Agregar la funcionalidad para seleccionar un usuario y mostrar sus detalles.
+### Paso 2: Instalar las Dependencias
+En la misma ubación donde clonaste el proyecto ejecuta el comando **npm install** en una terminal.
 
-### Reservas
-- Mostrar todas las reservas obtenidas del endpoint `/booking`.
-- Permitir filtrar reservas por `User`.
+### Paso 3: Inicia el servidor de desarrollo local
+En la misma ubación donde clonaste el proyecto ejecuta el comando **ionic serve** en una terminal, deberá abrirse una pestaña en el navegar con el proyecto ya ejecutandose.
 
-## Diseño
-- Usa componentes de Ionic para listas, inputs y botones.
-- Implementa un diseño responsivo que funcione en dispositivos móviles y desktop.
-
-## Recursos
-- Documentación de [Angular](https://angular.io/docs).
-- Documentación de [Ionic](https://ionicframework.com/docs).
-
-## Extras Opcionales
-- Validaciones en formularios.
-- Agregar mensajes de error para manejo de errores al consumir la API.
-- Diseño avanzado para mejorar la experiencia del usuario.
-
-## Entrega
-1. Sube tu proyecto a un repositorio público o privado (y comparte acceso).
-2. Incluye un archivo `README.md` en tu repositorio con las instrucciones necesarias para ejecutar tu aplicación.
-3. Envía el enlace del repositorio.
