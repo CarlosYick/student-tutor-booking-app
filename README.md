@@ -12,13 +12,13 @@ Aplicación Frontend para listar datos de estudiantes, tutores y reservas obteni
 ## Vista Previa
 
 ### Página de Inicio
-![Página de Inicio]([![vista-previa-1.png](https://i.postimg.cc/xd1Qkb1G/vista-previa-1.png)](https://postimg.cc/tswwwJP7))
+([![vista-previa-1.png](https://i.postimg.cc/xd1Qkb1G/vista-previa-1.png)](https://postimg.cc/tswwwJP7))
 
 ### Página de Bookings
-![Lista de Bookings][![vista-previa-3.png](https://i.postimg.cc/sXtC069K/vista-previa-3.png)](https://postimg.cc/mzNnPSnF)
+[![vista-previa-3.png](https://i.postimg.cc/sXtC069K/vista-previa-3.png)](https://postimg.cc/mzNnPSnF)
 
 ### Página de Bookings
-![Datos Tutor][![vista-previa-4.png](https://i.postimg.cc/2Swm8xr8/vista-previa-4.png)](https://postimg.cc/dhLg5rhz)
+[![vista-previa-4.png](https://i.postimg.cc/2Swm8xr8/vista-previa-4.png)](https://postimg.cc/dhLg5rhz)
 
 
 ## Instrucciones para Ejecutar la Aplicación
