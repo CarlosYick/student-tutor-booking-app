@@ -10,9 +10,9 @@ Este proyecto utiliza las siguientes tecnologías:
 Aplicación Frontend para listar datos de estudiantes, tutores y reservas obtenidos mediante el consumo de una API.
 
 ## Vista Previa
-![Página de Inicio](https://imgur.com/22D3PqJ)
-![Lista Bookings](https://imgur.com/pSw4FjB)
-![Tutor Seleccionado](https://imgur.com/CudJy1f)
+![Página de Inicio]([Imgur](https://imgur.com/22D3PqJ))
+![Lista Bookings]([Imgur](https://imgur.com/pSw4FjB))
+![Tutor Seleccionado]([Imgur](https://imgur.com/CudJy1f))
 
 ## Instrucciones para Ejecutar la Aplicación
 Sigue estos pasos para ejecutar la aplicación en tu entorno local:
