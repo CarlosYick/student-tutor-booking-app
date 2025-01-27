@@ -23,6 +23,23 @@ const routes: Routes = [
     path: 'classes',
     loadChildren: () => import('./pages/classes/classes.module').then( m => m.ClassesPageModule)
   },
+  {
+    path: 'student/:Id',
+    loadChildren: () => import('./pages/student/student.module').then( m => m.StudentPageModule)
+  },
+  {
+    path: 'tutor/:Id',
+    loadChildren: () => import('./pages/tutor/tutor.module').then( m => m.TutorPageModule)
+  },
+  {
+    path: 'bookings',
+    loadChildren: () => import('./pages/bookings/bookings.module').then( m => m.BookingsPageModule)
+  },
+
+
+
+
+
 ];
 
 @NgModule({

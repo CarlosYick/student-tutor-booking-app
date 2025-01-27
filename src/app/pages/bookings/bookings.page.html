@@ -1,0 +1,76 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Bookings</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="home"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Bookings</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-searchbar [(ngModel)]="searchTerm" (ionInput)="filterBookings()" placeholder="Search for student or tutor"></ion-searchbar>
+  
+  <ion-segment [(ngModel)]="filterType" (ionChange)="filterBookings()">
+    <ion-segment-button value="all">
+      <ion-label>All</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="students">
+      <ion-label>Students</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="tutors">
+      <ion-label>Tutors</ion-label>
+    </ion-segment-button>
+  </ion-segment>
+
+  <ion-list *ngIf="filterType === 'all' || filterType === 'students'">
+    <ion-item-divider color="light">Students</ion-item-divider>
+    <ion-card *ngFor="let booking of filteredStudents" [routerLink]="['/booking', booking.id]" [state]="{ booking: booking }">
+      <ion-card-header>
+        <ion-card-title>{{booking.student.first_name}} {{booking.student.last_name}}</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <ion-item>
+          <ion-label>
+            <ion-icon name="calendar-outline"></ion-icon> Date of Birth:
+          </ion-label>
+          <ion-note>{{booking.student.date_of_birth | date}}</ion-note>
+        </ion-item>
+        <ion-item>
+          <ion-label>
+            <ion-icon name="home-outline"></ion-icon> Address:
+          </ion-label>
+          <ion-note>{{booking.student.address}}</ion-note>
+        </ion-item>
+      </ion-card-content>
+    </ion-card>
+  </ion-list>
+
+  <ion-list *ngIf="filterType === 'all' || filterType === 'tutors'">
+    <ion-item-divider color="light">Tutors</ion-item-divider>
+    <ion-card *ngFor="let booking of filteredTutors" [routerLink]="['/booking', booking.id]" [state]="{ booking: booking }">
+      <ion-card-header>
+        <ion-card-title>{{booking.tutor.first_name}} {{booking.tutor.last_name}}</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <ion-item>
+          <ion-label>
+            <ion-icon name="briefcase-outline"></ion-icon> Speciality:
+          </ion-label>
+          <ion-note>{{booking.tutor.speciality}}</ion-note>
+        </ion-item>
+        <ion-item>
+          <ion-label>
+            <ion-icon name="mail-outline"></ion-icon> Email:
+          </ion-label>
+          <ion-note>{{booking.tutor.email}}</ion-note>
+        </ion-item>
+      </ion-card-content>
+    </ion-card>
+  </ion-list>
+</ion-content>

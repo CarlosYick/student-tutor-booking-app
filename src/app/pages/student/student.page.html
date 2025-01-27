@@ -1,0 +1,50 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Student</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="students"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Student</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-card *ngIf="student">
+    <ion-card-header>
+      <ion-card-title>{{student.first_name}} {{student.last_name}}</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-list>
+        <ion-item>
+          <ion-label>
+            <ion-icon name="person-outline"></ion-icon> First Name:
+          </ion-label>
+          <ion-note>{{student.first_name}}</ion-note>
+        </ion-item>
+        <ion-item>
+          <ion-label>
+            <ion-icon name="person-outline"></ion-icon> Last Name:
+          </ion-label>
+          <ion-note>{{student.last_name}}</ion-note>
+        </ion-item>
+        <ion-item>
+          <ion-label>
+            <ion-icon name="calendar-outline"></ion-icon> Date of Birth:
+          </ion-label>
+          <ion-note>{{student.date_of_birth | date}}</ion-note>
+        </ion-item>
+        <ion-item>
+          <ion-label>
+            <ion-icon name="home-outline"></ion-icon> Address:
+          </ion-label>
+          <ion-note>{{student.address}}</ion-note>
+        </ion-item>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
